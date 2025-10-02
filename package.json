@@ -1,0 +1,17 @@
+{
+  "name": "tdd-jest-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^30.2.0",
+    "mongoose": "^8.18.3",
+    "sinon": "^21.0.0"
+  }
+}
