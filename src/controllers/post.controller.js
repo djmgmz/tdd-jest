@@ -20,8 +20,4 @@ PostController.findPost = (req, res) => {
 
 };
 
-PostController.getAllPosts = (req, res) => {
-
-};
-
 module.exports = PostController;
