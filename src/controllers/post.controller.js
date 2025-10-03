@@ -23,7 +23,21 @@ PostController.update = (req, res) => {
 };
 
 PostController.findPost = (req, res) => {
+    return PostModel.findPostById(req.params.id, (err, post) => {
+        if (err) {
+            return res.status(500).end();
+        }
+        if (!post) {
+            return res.status(404).end();
+        }
+        return res.json(post);
+    });
+};
 
+exports.findPostById = (id, next) => {
+    Post.findById(id)
+        .then(post => next(null, post))
+        .catch(err => next(err));
 };
 
 module.exports = PostController;
