@@ -1,1 +1,20 @@
+npm install
+npm test
+jest
+git add .
+git commit -m "feat: add failing tests for getAllPosts, findPost, update"
+git push origin main
+git add .
+git commit -m "refactor: removed findPost and getAllPosts"
+git push origin main
+git add .
+git commit -m "Implement update(), add failing tests for findPost()"
+git push origin main
+git add .
+git commit -m "add: implemented findPost"
+git push origin main
 doskey /history > history.txt
+git add history.txt
+git commit -m "Add terminal command history"
+git push origin main
+
